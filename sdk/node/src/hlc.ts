@@ -1546,7 +1546,7 @@ export class TransactionContext extends events.EventEmitter {
         debug("$GOPATH: " + goPath);
 
         // Compose the path to the chaincode project directory
-        let projDir = goPath + "/src" + request.chaincodePath;
+        let projDir = goPath + "/src/" + request.chaincodePath;
         debug("projDir: " + projDir);
 
         // Compute the hash of the chaincode deployment parameters
